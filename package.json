@@ -1,8 +1,8 @@
 {
   "name": "myroom",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Chatting app",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server",
     "serve": "node server"
