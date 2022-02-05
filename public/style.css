@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("/wp.png");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+section.chat__section {
+    width: 800px;
+    max-width: 90%;
+    background: rgba(255, 255, 255, 0.308);
+    box-shadow: 0 15px 20px -3px rgba(0, 0, 0, 0.692), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.brand {
+    padding: 20px;
+    background: hsla(0, 0%, 95%, 0.664);
+    display: flex;
+    align-items: center;
+}
+.brand h1 {
+    /* text-transform: uppercase; */
+    font-size: 25px;
+    color: #444;
+    margin-left: 10px;
+    font-family: 'ink free';
+}
+.message__area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+}
+textarea {
+    width: 100%;
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    background: #fbfbfba9;
+}
+
+.message {
+    padding: 10px; 
+    border-radius: 8px; 
+    margin-bottom: 35px;
+    max-width: 300px;
+    position: relative;
+}
+.incoming {
+    background: #e79c9c7e;
+    color: rgb(226, 226, 226);  
+}
+.outgoing {
+    background: #ffecec7e;
+    color: #343436;
+    margin-left: auto;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: rgb(34, 34, 34);
+    font-size: 14px;
+}
+.message h5 {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    color: rgb(48, 48, 48);
+    font-size: 10px;
+}
