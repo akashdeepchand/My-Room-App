@@ -2,9 +2,9 @@ const socket = io()
 let name;
 let textarea = document.querySelector('#textarea')
 let messageArea = document.querySelector('.message__area')
-let d = new Date()
-let t = d.toLocaleTimeString()
-let ti = d.getHours() +":"+ d.getMinutes()
+// let d = new Date()
+// let t = d.toLocaleTimeString()
+// let ti = d.getHours() +":"+ d.getMinutes()
 do {
     name = prompt('Please enter your name: ')
 } while(!name)
@@ -19,7 +19,7 @@ function sendMessage(message) {
     let msg = {
         user: name,
         message: message.trim(),
-        time: ti
+        time: Date.getHours() +":"+ Date.getMinutes()
     }
     // Append 
     appendMessage(msg, 'outgoing')
