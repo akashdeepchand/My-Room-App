@@ -4,8 +4,7 @@
   "description": "Chatting app",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon server",
-    "serve": "node server"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
