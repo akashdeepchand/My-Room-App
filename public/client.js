@@ -2,7 +2,7 @@ const socket = io()
 let name;
 let textarea = document.querySelector('#textarea')
 let messageArea = document.querySelector('.message__area')
-// let d = new Date()
+let d = new Date()
 // let t = d.toLocaleTimeString()
 // let ti = d.getHours() +":"+ d.getMinutes()
 do {
@@ -19,7 +19,7 @@ function sendMessage(message) {
     let msg = {
         user: name,
         message: message.trim(),
-        time: Date.getHours() +":"+ Date.getMinutes()
+        time: (d.getHours() +":"+ d.getMinutes())
     }
     // Append 
     appendMessage(msg, 'outgoing')
