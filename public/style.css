@@ -28,10 +28,11 @@ section.chat__section {
 }
 .brand h1 {
     /* text-transform: uppercase; */
-    font-size: 25px;
+    font-size: 30px;
     color: #444;
     margin-left: 10px;
-    font-family: 'ink free';
+    font-family: 'Candara';
+    font-weight: 100;
 }
 .message__area{
     height: 500px;
@@ -39,7 +40,7 @@ section.chat__section {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    padding-top: 40px;
+    padding-top: 25px;
 }
 textarea {
     width: 100%;
@@ -59,7 +60,8 @@ textarea {
 }
 .incoming {
     background: #e79c9c7e;
-    color: rgb(226, 226, 226);  
+    color: rgb(226, 226, 226);
+    margin-right: auto;  
 }
 .outgoing {
     background: #ffecec7e;
@@ -79,4 +81,15 @@ textarea {
     right: 0;
     color: rgb(48, 48, 48);
     font-size: 10px;
+}
+.joined {
+    background: rgba(54, 54, 54, 0.322);
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 5px; 
+    margin-bottom: 20px;
+    max-width: none;
+    position: relative;
+    text-align: center;
 }

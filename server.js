@@ -18,7 +18,11 @@ app.get('/', (req, res) => {
 const io = require('socket.io')(http)
 
 io.on('connection', (socket) => {
-    console.log('Connected...')
+    socket.on('new-user-joined', name =>{
+        console.log(name,'Connected...')
+        socket.broadcast.emit('user-joined', name)
+    })
+    
     socket.on('message', (msg) => {
         socket.broadcast.emit('message', msg)
     })

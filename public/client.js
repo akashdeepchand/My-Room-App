@@ -7,12 +7,24 @@ let messageArea = document.querySelector('.message__area')
 // let ti = d.getHours() +":"+ d.getMinutes()
 do {
     name = prompt('Please enter your name: ')
+    socket.emit('new-user-joined', name)
 } while(!name)
 
 textarea.addEventListener('keyup', (e) => {
     if(e.key === 'Enter') {
         sendMessage(e.target.value)
     }
+})
+
+function append(message) {
+    let me = document.createElement('div');
+    me.innerText = message;
+    me.classList.add('joined')
+    messageArea.append(me);
+}
+
+socket.on('user-joined', name => {
+    append(name + ' joined the chat room', 'joined')
 })
 
 function sendMessage(message) {
