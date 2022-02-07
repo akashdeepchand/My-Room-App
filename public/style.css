@@ -93,3 +93,14 @@ textarea {
     position: relative;
     text-align: center;
 }
+.left {
+    background: rgba(66, 43, 43, 0.322);
+    color: rgba(255, 255, 255, 0.849);
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 5px; 
+    margin-bottom: 20px;
+    max-width: none;
+    position: relative;
+    text-align: center;
+}
