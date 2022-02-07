@@ -5,6 +5,7 @@ let messageArea = document.querySelector('.message__area')
 // let d = new Date()
 // let t = d.toLocaleTimeString()
 // let ti = d.getHours() +":"+ d.getMinutes()
+// let a = 11 (testing)
 do {
     name = prompt('Please enter your name: ')
     socket.emit('new-user-joined', name)
@@ -29,10 +30,16 @@ socket.on('user-joined', name => {
 
 function sendMessage(message) {
     let d = new Date()
+    let currentHours = d.getHours();
+    let currentMinutes = d.getMinutes();
+    if (currentMinutes.toString().length == 1) {
+        currentMinutes = "0" + currentMinutes;
+    }
+        
     let msg = {
         user: name,
         message: message.trim(),
-        time: (d.getHours() +":"+ d.getMinutes())
+        time: (currentHours +":"+ currentMinutes)
     }
     // Append 
     appendMessage(msg, 'outgoing')
