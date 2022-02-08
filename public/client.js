@@ -58,7 +58,7 @@ let a49 = new Audio('/audio/sorryy.mp3')
 let a50 = new Audio('/audio/sorry-to-bother-you.mp3')
 let a51 = new Audio('/audio/you-have-a-new-message.mp3')
 let a52 = new Audio('/audio/you-have-a-new-message1.mp3')
-
+// hgfhgfh
 // Chat features
 help = `<b>Voice commands:</b> <br>
     #hey<br>
