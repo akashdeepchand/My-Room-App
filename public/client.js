@@ -166,12 +166,10 @@ function sendMessage(message) {
     }
 
 
-    // Append 
     appendMessage(msg, 'outgoing')
     textarea.value = ''
     scrollToBottom()
-
-    // Send to server 
+  
     if (msg.message == "-help") {
         msg.message = help
         appendMessage(msg, 'outgoing')
