@@ -1,4 +1,4 @@
-
+// commit 2
 const socket = io()
 let name;
 let textarea = document.querySelector('#textarea')
