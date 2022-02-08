@@ -196,9 +196,11 @@ function appendMessage(msg, type) {
 // Recieve messages 
 socket.on('message', (msg) => {
     if (msg.message == '#hey') {
+        appendMessage(msg, 'incoming');
         a1.play();
     }
     else if (msg.message == '#heyy') {
+        appendMessage(msg, 'incoming');
         a2.play();
     }
     else if (msg.message == '#heyyy') {
