@@ -204,153 +204,203 @@ socket.on('message', (msg) => {
         a2.play();
     }
     else if (msg.message == '#heyyy') {
+        appendMessage(msg, 'incoming');
         a3.play();
     }
     else if (msg.message == '#access granted') {
+        appendMessage(msg, 'incoming');
         a4.play();
     }
     else if (msg.message == '#access granted 1') {
+        appendMessage(msg, 'incoming');
         a5.play();
     }
     else if (msg.message == '#answer me') {
+        appendMessage(msg, 'incoming');
         a6.play();
     }
     else if (msg.message == '#applause') {
+        appendMessage(msg, 'incoming');
         a7.play();
     }
     else if (msg.message == '#completed') {
+        appendMessage(msg, 'incoming'); 
         a8.play();
     }
     else if (msg.message == '#done') {
+        appendMessage(msg, 'incoming');
         a9.play();
     }
     else if (msg.message == '#done 1') {
+        appendMessage(msg, 'incoming');
         a10.play();
     }
     else if (msg.message == '#done for you') {
+        appendMessage(msg, 'incoming');
         a11.play();
     }
     else if (msg.message == '#excuse me') {
+        appendMessage(msg, 'incoming');
         a12.play();
     }
     else if (msg.message == '#excuse me 1') {
+        appendMessage(msg, 'incoming');
         a13.play();
     }
     else if (msg.message == '#excuse me 2') {
+        appendMessage(msg, 'incoming'); 
         a14.play();
     }
     else if (msg.message == '#guess who') {
+        appendMessage(msg, 'incoming');
         a15.play();
     }
     else if (msg.message == '#guess who 1') {
+        appendMessage(msg, 'incoming');
         a16.play();
     }
     else if (msg.message == '#guess what') {
+        appendMessage(msg, 'incoming');
         a17.play();
     }
     else if (msg.message == '#creepy door') {
+        appendMessage(msg, 'incoming');
         a18.play();
     }
     else if (msg.message == '#haha') {
+        appendMessage(msg, 'incoming');
         a19.play();
     }
     else if (msg.message == '#haha 1') {
+        appendMessage(msg, 'incoming');
         a20.play();
     }
     else if (msg.message == '#huhaha') {
+        appendMessage(msg, 'incoming');
         a21.play();
     }
     else if (msg.message == '#hello') {
+        appendMessage(msg, 'incoming');
         a22.play();
     }
     else if (msg.message == '#hello 1') {
+        appendMessage(msg, 'incoming');
         a23.play();
     }
     else if (msg.message == '#hello?') {
+        appendMessage(msg, 'incoming');
         a24.play();
     }
     else if (msg.message == '#take a look') {
+        appendMessage(msg, 'incoming');
         a25.play();
     }
     else if (msg.message == '#take a look 1') {
+        appendMessage(msg, 'incoming');
         a26.play();
     }
     else if (msg.message == '#hm') {
+        appendMessage(msg, 'incoming');
         a27.play();
     }
     else if (msg.message == '#hmm') {
+        appendMessage(msg, 'incoming');
         a28.play();
     }
     else if (msg.message == '#hmmm') {
+        appendMessage(msg, 'incoming');
         a29.play();
     }
     else if (msg.message == '#if you dont pick') {
+        appendMessage(msg, 'incoming'); 
         a30.play();
     }
     else if (msg.message == '#if you dont pick 1') {
+        appendMessage(msg, 'incoming');
         a31.play();
     }
     else if (msg.message == '#incoming call') {
+        appendMessage(msg, 'incoming');
         a32.play();
     }
     else if (msg.message == '#incoming call 1') {
+        appendMessage(msg, 'incoming');
         a33.play();
     }
     else if (msg.message == '#its me again') {
+        appendMessage(msg, 'incoming');
         a34.play();
     }
     else if (msg.message == '#knock') {
+        appendMessage(msg, 'incoming');
         a35.play();
     }
     else if (msg.message == '#knock knock') {
+        appendMessage(msg, 'incoming');
         a36.play();
     }
     else if (msg.message == '#message') {
+        appendMessage(msg, 'incoming');
         a37.play();
     }
     else if (msg.message == '#message 1') {
+        appendMessage(msg, 'incoming'); 
         a38.play();
     }
     else if (msg.message == '#message 2') {
+        appendMessage(msg, 'incoming');
         a39.play();
     }
     else if (msg.message == '#mmm') {
+        appendMessage(msg, 'incoming');
         a40.play();
     }
     else if (msg.message == '#mmmm') {
+        appendMessage(msg, 'incoming');
         a41.play();
     }
     else if (msg.message == '#new notification') {
+        appendMessage(msg, 'incoming');
         a42.play();
     }
     else if (msg.message == '#new notification 1') {
+        appendMessage(msg, 'incoming');
         a43.play();
     }
     else if (msg.message == '#okay') {
+        appendMessage(msg, 'incoming');
         a44.play();
     }
     else if (msg.message == '#okayy') {
+        appendMessage(msg, 'incoming');
         a45.play();
     }
     else if (msg.message == '#pick me up') {
+        appendMessage(msg, 'incoming');
         a46.play();
     }
     else if (msg.message == '#pick me up 1') {
+        appendMessage(msg, 'incoming');
         a47.play();
     }
     else if (msg.message == '#sorry') {
+        appendMessage(msg, 'incoming');
         a48.play();
     }
     else if (msg.message == '#sorryy') {
+        appendMessage(msg, 'incoming');
         a49.play();
     }
     else if (msg.message == '#sorry to bother you') {
+        appendMessage(msg, 'incoming');
         a50.play();
     }
     else if (msg.message == '#you have a new message') {
+        appendMessage(msg, 'incoming');
         a51.play();
     }
     else if (msg.message == '#you have a new message 1') {
+        appendMessage(msg, 'incoming');
         a52.play();
     }
     else if (msg.message == help) {
