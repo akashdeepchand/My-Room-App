@@ -1,4 +1,6 @@
-const socket = io()
+
+
+const socket = io() 
 let name;
 let textarea = document.querySelector('#textarea')
 let messageArea = document.querySelector('.message__area')
@@ -191,6 +193,9 @@ function appendMessage(msg, type) {
     messageArea.appendChild(mainDiv)
 }
 
+// msg.message = "@hello"
+// let mssg = msg.message.slice(1)
+// console.log(mssg)
 // Recieve messages 
 socket.on('message', (msg) => {
     if (msg.message == '#hey') {
@@ -405,6 +410,7 @@ socket.on('message', (msg) => {
         msg.message = "-help <br><br>"+ msg.message
         appendMessage(msg, 'incoming');    
     }
+    
     else {
         appendMessage(msg, 'incoming');
         s1.play();

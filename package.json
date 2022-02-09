@@ -11,7 +11,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "socket.io": "^2.3.0"
+    "say": "^0.16.0",
+    "socket.io": "^2.3.0",
+    "text-to-speech-js": "^1.1.10"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
