@@ -59,6 +59,8 @@ let a49 = new Audio('/audio/sorryy.mp3')
 let a50 = new Audio('/audio/sorry-to-bother-you.mp3')
 let a51 = new Audio('/audio/you-have-a-new-message.mp3')
 let a52 = new Audio('/audio/you-have-a-new-message1.mp3')
+let a53 = new Audio('/audio/Girl-Saying-I-Love-You-Sound-Effect.mp3')
+let a54 = new Audio('/audio/Em-Matladutunnav-Raa-BGM.mp3')
 
 // Chat features
 help = `<b>Voice commands:</b> <br>
@@ -114,6 +116,8 @@ help = `<b>Voice commands:</b> <br>
     #sorry to bother you<br>
     #you have a new message<br>
     #you have a new message 1<br>
+    #i love you<br>
+    #rowdy vdk<br>
 `    
 
 do {
@@ -405,6 +409,14 @@ socket.on('message', (msg) => {
     else if (msg.message == '#you have a new message 1') {
         appendMessage(msg, 'incoming');
         a52.play();
+    }
+    else if (msg.message == '#i love you') {
+        appendMessage(msg, 'incoming');
+        a53.play();
+    }
+    else if (msg.message == '#rowdy vdk') {
+        appendMessage(msg, 'incoming');
+        a54.play();
     }
     else if (msg.message == help) {
         msg.message = "-help <br><br>"+ msg.message
